@@ -34,7 +34,7 @@
         -5px -5px 10px #00133a;
     --webkit-scrollbar-thumb: #09f0f8;
     --footer-shadow: var(--box-shadow);
-    --color1:#0c06fb;
+    --color1: #0c06fb;
 
 }
 
@@ -77,13 +77,20 @@
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 /* 
 .icons img {
     width: 1.9vw;
     cursor: pointer;
     margin: 0 1.4rem;
 } */
-.icons img { width: 2.9rem; cursor: pointer; position: fixed; top: 4%; right: 2.2%; }
+.icons img {
+    width: 2.9rem;
+    cursor: pointer;
+    position: fixed;
+    top: 4%;
+    right: 2.2%;
+}
 
 body {
     background-color: var(--primary-color);
@@ -401,7 +408,8 @@ button:hover {
     box-shadow: var(--box-shadow);
 
 }
-.box-container .box h5{
+
+.box-container .box h5 {
     position: relative;
     top: -13rem;
     color: var(--color1);
@@ -409,7 +417,8 @@ button:hover {
     font-weight: bolder;
     text-align: center;
 }
-.box-container .box a{
+
+.box-container .box a {
     text-decoration: none;
 }
 
@@ -464,6 +473,7 @@ button:hover {
 }
 
 #portfolio .box-container .box:hover img {
+    transition: 1s;
     transform: scale(1.2);
 }
 
@@ -622,6 +632,7 @@ textarea {
     padding: 2rem;
     font-size: 2rem;
 }
+
 .footer p {
     display: flex;
     justify-content: center;
@@ -698,12 +709,13 @@ textarea {
         top: 13%;
         right: 3%;
     } */
-    .icons img { 
-        width: 3rem; 
-        cursor: pointer; 
+    .icons img {
+        width: 3rem;
+        cursor: pointer;
         position: fixed;
         top: 8rem;
-    right: 3rem; }
+        right: 3rem;
+    }
 
 }
 
@@ -746,21 +758,122 @@ textarea {
     header .user .name {
         font-size: 2rem;
     }
+
     header .user .field {
         font-size: 2.2rem;
     }
-    
-header .user img {
-    width: 12rem;
-    height: 12rem;
+
+    header .user img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    header li a {
+        font-size: 1.8rem;
+        margin: 1.6rem 0;
+    }
+
+    button {
+        padding: 0.6vw 2vw;
+        font-size: 2vw;
+    }
+
 }
-header li a {
-    font-size: 1.8rem;
-    margin: 1.6rem 0;
+
+.main0 {
+    width: 97%;
+    margin: auto;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+    margin: 1rem 0;
 }
-button {
-    padding: 0.6vw 2vw;
-    font-size: 2vw;
+
+.portfolio {
+    margin-bottom: 1.5rem;
 }
+
+.slide0 {
+    width: 53%;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+    border-radius: .7rem;
+    object-fit: contain;
+    background-color: white;
+}
+
+
+.main {
+    width: 97%;
+    margin: auto;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 53%;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+    border-radius: .7rem;
+    object-fit: contain;
+    background-color: white;
+}
+
+.trans {
+    transition: 1s;
+}
+
+.main1 {
+    width: 97%;
+    margin: auto;
+    margin-top: 1.5rem;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide1 {
+    width: 53%;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+    border-radius: .2rem;
+    border-radius: .7rem;
+    object-fit: contain;
+    background-color: white;
+}
+
+.trans {
+    transition: 2s;
+}
+
+@media screen and (max-width:800px) {
+
+    .main,
+    .main1,
+    .main0 {
+        width: 78%;
+        margin: auto;
+        height: 20vh;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    .main,
+    .main1,
+    .main0 {
+        width: 100%;
+        margin: auto;
+        height: 15vh;
+        margin-bottom: 1rem;
+    }
 
 }
